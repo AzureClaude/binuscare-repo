@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>btn-prev</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-0.9%" y="-1.8%" width="101.8%" height="103.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-2" cx="20" cy="20" r="20"></circle>
+        <filter x="-11.2%" y="-11.2%" width="122.5%" height="122.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home" transform="translate(-24.000000, -411.000000)">
+            <g id="Group-16" filter="url(#filter-1)" transform="translate(0.000000, 148.000000)">
+                <g id="UI/Buttons/Circle/Prev" transform="translate(30.000000, 269.000000)">
+                    <g id="btn-prev">
+                        <g id="Oval-3">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use fill="#FCFCFC" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                        <polygon id="page-1" fill="#000000" points="22.2784008 13 15 20.00026 22.2784008 27.0005201 23.0004957 26.0019689 16.7596134 20.00026 23.0004957 13.9985512"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
