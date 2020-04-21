@@ -1,3 +1,5 @@
+@import "variable.scss";
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -40,61 +42,154 @@ header{
     box-shadow: 0 0 5px 0 rgba(0,0,0,0.20);
 
     .navbar{
-        display: flex;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 41.94px auto auto;
+        justify-items: end;
+
+        @media(min-width: $screen-mobile){
+            display: flex;
+        }
 
         &-block{
-            width: 7%;
-            max-width: 66px;
-
             img{
                 max-height: 77px;
             }
         }
 
-        &-logo{
+        &-binus{
             width: 100%;
-            margin-top: 21px;
-            margin-bottom: 9px;
+            margin: 21px 0px 9px 21px;
+            justify-self: baseline;
         }
 
-        &-pages{
+        &-toggle{
+            display: none;
+
+            &:checked ~ .navbar-items{
+                max-height: 212px;
+                transition:max-height .2s ease-in-out;
+            }
+
+            &:checked ~ .navbar-icon{
+                .nav-icon{
+                    background: transparent;
+
+                    &:before{
+                        transform: rotate(-45deg);
+                        top: 0;
+                    }
+
+                    &:after{
+                        transform: rotate(45deg);
+                        top: 0;
+                    }
+                }
+            }
+        }
+
+        &-icon{
+            position: relative;
+            margin-bottom: 20px;
             align-self: flex-end;
-            margin-bottom: 8px;
+            cursor: pointer;
+            
+            @media(min-width: $screen-mobile){
+                display: none;
+            }
 
-            &-home{
-                text-align: right;
-                padding-bottom: 10px;
+            .nav-icon{
+                background: #666666;
+                display: block;
+                height: 3px;
+                width: 20px;
+                position: relative;
+                border-radius: 2px;
+                transition:background .2s ease-out;
 
+                &:before{
+                    background: #666666;
+                    border-radius: 2px;
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    transition: all .2s ease-out;
+                    top: 6px;
+                }
+
+                &:after{
+                    background: #666666;
+                    border-radius: 2px;
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    transition: all .2s ease-out;
+                    top: -6px;
+                }
+            }
+        }
+
+        &-items{
+            width: 100%;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            list-style: none;
+            overflow: hidden;
+            max-height: 0;
+            white-space: nowrap;
+
+            li{
+                text-align: center;
+
+                a{
+                    display: block;
+                    border-bottom: 1px solid #EAEAEB;
+                    padding: 15px;
+                    
+                    @media(min-width: $screen-mobile){
+                        border: none;
+                        padding: 0;
+                    }
+                }
+                
                 a:link{
                     text-decoration: none;
                 }
 
                 .open-sans-regular{
+                    color: rgb(136, 94, 94);
                     font-size: 12px;
-                    color: #AFAFAF;
+                }
+
+                .open-sans-bold{
+                    color: #666666;
+                    font-size: 14px;
                 }
             }
 
-            &-items{
-                ul{
-                    display: flex;
-    
-                    li{
-                        list-style: none;
-                        margin-left: 24px;
-                        white-space: nowrap;
+            @media (min-width: $screen-mobile){
+                display: flex;
+                justify-content: flex-end;
+                align-self: flex-end;
+                margin-bottom: 8px;
+                max-height: 100%;
 
-                        a:link{
-                            text-decoration: none;
-                        }
-    
-                        .open-sans-bold{
-                            color: #666666;
-                            font-size: 14px;
-                        }
+                li{
+                    a{
+                        margin-left: 24px;
+                    }
+
+                    .home{
+                        position: absolute;
+                        right: 30px;
+                        top: 94px;
                     }
                 }
             }
-        } 
+        }  
     }
 }

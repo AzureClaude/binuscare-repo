@@ -1,4 +1,4 @@
-/* line 1, ../sass/style.scss */
+/* line 3, ../sass/style.scss */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,99 +7,196 @@
 }
 
 /* Fonts */
-/* line 9, ../sass/style.scss */
+/* line 11, ../sass/style.scss */
 .open-sans-semibold {
   font-weight: 600;
 }
 
-/* line 13, ../sass/style.scss */
+/* line 15, ../sass/style.scss */
 .open-sans-regular {
   font-weight: 400;
 }
 
-/* line 17, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 .open-sans-bold {
   font-weight: 700;
 }
 
 /* Header */
-/* line 22, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 header {
   background-color: #333333;
   width: 100%;
   height: 40px;
 }
-/* line 27, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 header img {
   position: absolute;
   top: 12px;
   right: 30.2px;
 }
 
-/* line 34, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 .container {
   margin: 0px 30px;
 }
 
 /* Navigation Bar */
-/* line 39, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .navigation-bar {
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 42, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 .navigation-bar .navbar {
-  display: flex;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 41.94px auto auto;
+  justify-items: end;
 }
-/* line 45, ../sass/style.scss */
-.navigation-bar .navbar-block {
-  width: 7%;
-  max-width: 66px;
+@media (min-width: 579px) {
+  /* line 44, ../sass/style.scss */
+  .navigation-bar .navbar {
+    display: flex;
+  }
 }
-/* line 49, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 .navigation-bar .navbar-block img {
   max-height: 77px;
 }
-/* line 54, ../sass/style.scss */
-.navigation-bar .navbar-logo {
-  width: 100%;
-  margin-top: 21px;
-  margin-bottom: 9px;
-}
 /* line 60, ../sass/style.scss */
-.navigation-bar .navbar-pages {
-  align-self: flex-end;
-  margin-bottom: 8px;
+.navigation-bar .navbar-binus {
+  width: 100%;
+  margin: 21px 0px 9px 21px;
+  justify-self: baseline;
 }
-/* line 64, ../sass/style.scss */
-.navigation-bar .navbar-pages-home {
-  text-align: right;
-  padding-bottom: 10px;
+/* line 66, ../sass/style.scss */
+.navigation-bar .navbar-toggle {
+  display: none;
 }
-/* line 68, ../sass/style.scss */
-.navigation-bar .navbar-pages-home a:link {
-  text-decoration: none;
+/* line 69, ../sass/style.scss */
+.navigation-bar .navbar-toggle:checked ~ .navbar-items {
+  max-height: 212px;
+  transition: max-height .2s ease-in-out;
 }
-/* line 72, ../sass/style.scss */
-.navigation-bar .navbar-pages-home .open-sans-regular {
-  font-size: 12px;
-  color: #AFAFAF;
+/* line 75, ../sass/style.scss */
+.navigation-bar .navbar-toggle:checked ~ .navbar-icon .nav-icon {
+  background: transparent;
 }
-/* line 79, ../sass/style.scss */
-.navigation-bar .navbar-pages-items ul {
-  display: flex;
+/* line 78, ../sass/style.scss */
+.navigation-bar .navbar-toggle:checked ~ .navbar-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
 }
-/* line 82, ../sass/style.scss */
-.navigation-bar .navbar-pages-items ul li {
-  list-style: none;
-  margin-left: 24px;
-  white-space: nowrap;
-}
-/* line 87, ../sass/style.scss */
-.navigation-bar .navbar-pages-items ul li a:link {
-  text-decoration: none;
+/* line 83, ../sass/style.scss */
+.navigation-bar .navbar-toggle:checked ~ .navbar-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
 }
 /* line 91, ../sass/style.scss */
-.navigation-bar .navbar-pages-items ul li .open-sans-bold {
+.navigation-bar .navbar-icon {
+  position: relative;
+  margin-bottom: 20px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+@media (min-width: 579px) {
+  /* line 91, ../sass/style.scss */
+  .navigation-bar .navbar-icon {
+    display: none;
+  }
+}
+/* line 101, ../sass/style.scss */
+.navigation-bar .navbar-icon .nav-icon {
+  background: #666666;
+  display: block;
+  height: 3px;
+  width: 20px;
+  position: relative;
+  border-radius: 2px;
+  transition: background .2s ease-out;
+}
+/* line 110, ../sass/style.scss */
+.navigation-bar .navbar-icon .nav-icon:before {
+  background: #666666;
+  border-radius: 2px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: 6px;
+}
+/* line 122, ../sass/style.scss */
+.navigation-bar .navbar-icon .nav-icon:after {
+  background: #666666;
+  border-radius: 2px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: -6px;
+}
+/* line 136, ../sass/style.scss */
+.navigation-bar .navbar-items {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  list-style: none;
+  overflow: hidden;
+  max-height: 0;
+  white-space: nowrap;
+}
+/* line 145, ../sass/style.scss */
+.navigation-bar .navbar-items li {
+  text-align: center;
+}
+/* line 148, ../sass/style.scss */
+.navigation-bar .navbar-items li a {
+  display: block;
+  border-bottom: 1px solid #EAEAEB;
+  padding: 15px;
+}
+@media (min-width: 579px) {
+  /* line 148, ../sass/style.scss */
+  .navigation-bar .navbar-items li a {
+    border: none;
+    padding: 0;
+  }
+}
+/* line 159, ../sass/style.scss */
+.navigation-bar .navbar-items li a:link {
+  text-decoration: none;
+}
+/* line 163, ../sass/style.scss */
+.navigation-bar .navbar-items li .open-sans-regular {
+  color: #885e5e;
+  font-size: 12px;
+}
+/* line 168, ../sass/style.scss */
+.navigation-bar .navbar-items li .open-sans-bold {
   color: #666666;
   font-size: 14px;
+}
+@media (min-width: 579px) {
+  /* line 136, ../sass/style.scss */
+  .navigation-bar .navbar-items {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin-bottom: 8px;
+    max-height: 100%;
+  }
+  /* line 182, ../sass/style.scss */
+  .navigation-bar .navbar-items li a {
+    margin-left: 24px;
+  }
+  /* line 186, ../sass/style.scss */
+  .navigation-bar .navbar-items li .home {
+    position: absolute;
+    right: 30px;
+    top: 94px;
+  }
 }
