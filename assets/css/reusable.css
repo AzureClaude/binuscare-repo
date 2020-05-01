@@ -6,47 +6,54 @@
   font-family: "Open Sans";
 }
 
+/* line 10, ../sass/reusable.scss */
+body {
+  background: #EAEAEB;
+}
+
 /* Fonts */
-/* line 11, ../sass/reusable.scss */
+/* line 15, ../sass/reusable.scss */
 .open-sans-semibold {
   font-weight: 600;
 }
 
-/* line 15, ../sass/reusable.scss */
+/* line 19, ../sass/reusable.scss */
 .open-sans-regular {
   font-weight: 400;
 }
 
-/* line 19, ../sass/reusable.scss */
+/* line 23, ../sass/reusable.scss */
 .open-sans-bold {
   font-weight: 700;
 }
 
 /* Header */
-/* line 24, ../sass/reusable.scss */
+/* line 28, ../sass/reusable.scss */
 header {
   background-color: #333333;
   width: 100%;
   height: 40px;
 }
-/* line 29, ../sass/reusable.scss */
+/* line 33, ../sass/reusable.scss */
 header img {
   position: absolute;
   top: 12px;
   right: 30.2px;
+  cursor: pointer;
 }
 
-/* line 36, ../sass/reusable.scss */
+/* line 41, ../sass/reusable.scss */
 .container {
   margin: 0px 30px;
 }
 
 /* Navigation Bar */
-/* line 41, ../sass/reusable.scss */
+/* line 46, ../sass/reusable.scss */
 .navigation-bar {
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
 }
-/* line 44, ../sass/reusable.scss */
+/* line 50, ../sass/reusable.scss */
 .navigation-bar .navbar {
   display: grid;
   width: 100%;
@@ -54,45 +61,45 @@ header img {
   justify-items: end;
 }
 @media (min-width: 579px) {
-  /* line 44, ../sass/reusable.scss */
+  /* line 50, ../sass/reusable.scss */
   .navigation-bar .navbar {
     display: flex;
   }
 }
-/* line 55, ../sass/reusable.scss */
+/* line 61, ../sass/reusable.scss */
 .navigation-bar .navbar-block img {
   max-height: 77px;
 }
-/* line 60, ../sass/reusable.scss */
+/* line 66, ../sass/reusable.scss */
 .navigation-bar .navbar-binus {
   width: 100%;
   margin: 21px 0px 9px 21px;
   justify-self: baseline;
 }
-/* line 66, ../sass/reusable.scss */
+/* line 72, ../sass/reusable.scss */
 .navigation-bar .navbar-toggle {
   display: none;
 }
-/* line 69, ../sass/reusable.scss */
+/* line 75, ../sass/reusable.scss */
 .navigation-bar .navbar-toggle:checked ~ .navbar-items {
   max-height: 212px;
   transition: max-height .2s ease-in-out;
 }
-/* line 75, ../sass/reusable.scss */
+/* line 81, ../sass/reusable.scss */
 .navigation-bar .navbar-toggle:checked ~ .navbar-icon .nav-icon {
   background: transparent;
 }
-/* line 78, ../sass/reusable.scss */
+/* line 84, ../sass/reusable.scss */
 .navigation-bar .navbar-toggle:checked ~ .navbar-icon .nav-icon:before {
   transform: rotate(-45deg);
   top: 0;
 }
-/* line 83, ../sass/reusable.scss */
+/* line 89, ../sass/reusable.scss */
 .navigation-bar .navbar-toggle:checked ~ .navbar-icon .nav-icon:after {
   transform: rotate(45deg);
   top: 0;
 }
-/* line 91, ../sass/reusable.scss */
+/* line 97, ../sass/reusable.scss */
 .navigation-bar .navbar-icon {
   position: relative;
   margin-bottom: 20px;
@@ -100,12 +107,12 @@ header img {
   cursor: pointer;
 }
 @media (min-width: 579px) {
-  /* line 91, ../sass/reusable.scss */
+  /* line 97, ../sass/reusable.scss */
   .navigation-bar .navbar-icon {
     display: none;
   }
 }
-/* line 101, ../sass/reusable.scss */
+/* line 107, ../sass/reusable.scss */
 .navigation-bar .navbar-icon .nav-icon {
   background: #666666;
   display: block;
@@ -115,7 +122,7 @@ header img {
   border-radius: 2px;
   transition: background .2s ease-out;
 }
-/* line 110, ../sass/reusable.scss */
+/* line 116, ../sass/reusable.scss */
 .navigation-bar .navbar-icon .nav-icon:before {
   background: #666666;
   border-radius: 2px;
@@ -127,7 +134,7 @@ header img {
   transition: all .2s ease-out;
   top: 6px;
 }
-/* line 122, ../sass/reusable.scss */
+/* line 128, ../sass/reusable.scss */
 .navigation-bar .navbar-icon .nav-icon:after {
   background: #666666;
   border-radius: 2px;
@@ -139,7 +146,7 @@ header img {
   transition: all .2s ease-out;
   top: -6px;
 }
-/* line 136, ../sass/reusable.scss */
+/* line 142, ../sass/reusable.scss */
 .navigation-bar .navbar-items {
   width: 100%;
   grid-column-start: 1;
@@ -149,39 +156,39 @@ header img {
   max-height: 0;
   white-space: nowrap;
 }
-/* line 145, ../sass/reusable.scss */
+/* line 151, ../sass/reusable.scss */
 .navigation-bar .navbar-items li {
   text-align: center;
 }
-/* line 148, ../sass/reusable.scss */
+/* line 154, ../sass/reusable.scss */
 .navigation-bar .navbar-items li a {
   display: block;
   border-bottom: 1px solid #EAEAEB;
   padding: 15px;
 }
 @media (min-width: 579px) {
-  /* line 148, ../sass/reusable.scss */
+  /* line 154, ../sass/reusable.scss */
   .navigation-bar .navbar-items li a {
     border: none;
     padding: 0;
   }
 }
-/* line 159, ../sass/reusable.scss */
+/* line 165, ../sass/reusable.scss */
 .navigation-bar .navbar-items li a:link {
   text-decoration: none;
 }
-/* line 163, ../sass/reusable.scss */
+/* line 169, ../sass/reusable.scss */
 .navigation-bar .navbar-items li .open-sans-regular {
   color: #885e5e;
   font-size: 12px;
 }
-/* line 168, ../sass/reusable.scss */
+/* line 174, ../sass/reusable.scss */
 .navigation-bar .navbar-items li .open-sans-bold {
   color: #666666;
   font-size: 14px;
 }
 @media (min-width: 579px) {
-  /* line 136, ../sass/reusable.scss */
+  /* line 142, ../sass/reusable.scss */
   .navigation-bar .navbar-items {
     display: flex;
     justify-content: flex-end;
@@ -189,11 +196,11 @@ header img {
     margin-bottom: 8px;
     max-height: 100%;
   }
-  /* line 182, ../sass/reusable.scss */
+  /* line 188, ../sass/reusable.scss */
   .navigation-bar .navbar-items li a {
     margin-left: 24px;
   }
-  /* line 186, ../sass/reusable.scss */
+  /* line 192, ../sass/reusable.scss */
   .navigation-bar .navbar-items li .home {
     position: absolute;
     right: 30px;
@@ -202,25 +209,25 @@ header img {
 }
 
 /* Login Button */
-/* line 198, ../sass/reusable.scss */
+/* line 204, ../sass/reusable.scss */
 .login {
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
   width: 100%;
 }
 @media (min-width: 579px) {
-  /* line 198, ../sass/reusable.scss */
+  /* line 204, ../sass/reusable.scss */
   .login {
     position: absolute;
     z-index: 2;
   }
 }
-/* line 208, ../sass/reusable.scss */
+/* line 214, ../sass/reusable.scss */
 .login-button {
   padding: 16px 30px 16px 0px;
   text-align: right;
 }
-/* line 212, ../sass/reusable.scss */
+/* line 218, ../sass/reusable.scss */
 .login-button input[type="submit"] {
   border: none;
   background: transparent;
@@ -236,4 +243,52 @@ header img {
   border-radius: 22px;
   width: 120px;
   height: 44px;
+}
+
+/* Footer */
+/* line 238, ../sass/reusable.scss */
+footer {
+  background: #414042;
+  height: 148px;
+  padding: 24px 30px 0 32px;
+  display: flex;
+  position: relative;
+}
+/* line 246, ../sass/reusable.scss */
+footer .footer-website {
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+/* line 252, ../sass/reusable.scss */
+footer .footer-company {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+/* line 259, ../sass/reusable.scss */
+footer .footer-copyright {
+  margin-top: 40px;
+  font-size: 9px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+/* line 267, ../sass/reusable.scss */
+footer .social-media {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 16px;
+  position: absolute;
+  right: 30px;
+}
+/* line 274, ../sass/reusable.scss */
+footer .social-media img {
+  height: 18px;
+  cursor: pointer;
+}
+/* line 279, ../sass/reusable.scss */
+footer .social-media i {
+  color: #FFFFFF;
+  cursor: pointer;
 }
