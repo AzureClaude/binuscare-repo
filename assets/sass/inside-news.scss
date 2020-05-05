@@ -1,0 +1,218 @@
+@import "_variables.scss";
+
+
+body{
+    background-color: #F8F8F8;
+}
+
+/* Banner */ 
+.banner{
+    padding-bottom: 64px;
+    &-img{
+        background-image: url("../images/example-photos/example3.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 48.3vw;
+    }
+}
+
+.inner-container{
+    @media(min-width: 860px){
+        width: 800px;
+        margin: auto;
+    }
+}
+
+/* Content */ 
+.news{
+    margin: auto;
+
+    &-category{
+        display: flex;
+        font-size: 12px;
+        color: #666666;
+        margin: 0 -4px;
+
+        &-item{
+            padding: 0 4px;
+        }
+
+        &-arrow{
+            padding: 0 4px;
+        }
+
+        .arrow{
+            border: solid #737373;
+            border-width: 0 1px 1px 0;
+            display: inline-block;
+            padding: 3px;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+    }
+
+    &-title{
+        margin-top: 32px;
+        font-size: 42px;
+        color: #4A4A4A;
+    }
+
+    &-date{
+        display: flex;
+        font-size: 16px;
+        margin: 16px -22px 0;
+
+        .author-date{
+            padding: 0 22px;
+            color: #9B9B9B;
+        }
+
+        .dot{
+            margin-top: 9px;
+            background-color: #7C7C7C;
+            border-radius: 50%;
+            width: 4px;
+            height: 4px;
+        }
+
+        .author-category{
+            padding: 0 22px;
+
+            a{
+                text-decoration: none;
+                color: #2F83B9;
+            }
+
+            span{
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-content{
+        &-article{
+            margin-top: 36px;
+            font-size: 16px;
+            color: #4A4A4A;
+            line-height: 24px;
+
+            .open-sans-bold{
+                font-size: 32px;
+            }
+
+            .small-header{
+                font-weight: 700;
+                font-size: 24px;
+            }
+        }
+
+        &-img{
+            margin-top: 36px;
+            text-align: center;
+
+            img{
+                width: 100%;
+            }
+
+            .img-caption{
+                margin-top: 20px;
+                font-size: 12px;
+                color: #9B9B9B;
+            }
+        }
+    }
+}
+
+/* Tags */
+.tags{
+    margin-top: 32px;
+
+    &-list{
+        text-align: center;
+
+        &-btn{
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background: #F2F2F2;
+            color: #9B9B9B;
+            text-align: center;
+            text-decoration: none;
+            font-size: 12px;
+            border-radius: 4px;
+            padding: 8px;
+            margin: 0 2px;
+        }
+    }
+}
+
+/* Profile */ 
+.profile-container{
+    border-bottom: 1px solid #F2F2F2;
+    padding-bottom: 72px;
+
+    @media(min-width: 860px){
+        width: 800px;
+        margin: auto;
+    }
+ 
+    .bottom-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+
+    .dot{
+        background-color: #D8D8D8;
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
+        margin: 0 12px;
+    }
+    }
+
+    .profile{
+    margin-top: 48px;
+    text-align: center;
+
+    &-photo{
+        margin: auto;
+        background-image: url("../images/example-photos/example2.jpg");
+        background-size: cover;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+    }
+
+    &-name{
+        margin-top: 18px;
+        font-size: 18px;
+        color: #4A4A4A;
+    }
+    }
+}
+
+/* Share */ 
+.share{
+    margin-top: 25px;
+    text-align: center;
+
+    &-text{
+        font-size: 22px;
+        color: #4A4A4A;
+    }
+
+    &-icons{
+        margin-top: 11px;
+        padding-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 24px);
+        column-gap: 16px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        img{
+            width: 24px;
+        }
+    }
+}

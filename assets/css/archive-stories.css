@@ -1,0 +1,113 @@
+/* line 3, ../sass/archive-stories.scss */
+body {
+  background: #FFFFFF;
+}
+
+@media (min-width: 579px) {
+  /* line 7, ../sass/archive-stories.scss */
+  .login {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* Stories */
+/* line 15, ../sass/archive-stories.scss */
+.stories {
+  padding: 64px 0 100px;
+}
+/* line 18, ../sass/archive-stories.scss */
+.stories-title {
+  font-size: 32px;
+  color: #5E5E5E;
+  letter-spacing: 0;
+  text-align: center;
+  padding-bottom: 16px;
+}
+/* line 26, ../sass/archive-stories.scss */
+.stories-desc {
+  margin: auto;
+  font-size: 16px;
+  color: #5E5E5E;
+  text-align: center;
+  line-height: 26px;
+  max-width: 480px;
+  padding-bottom: 80px;
+}
+/* line 36, ../sass/archive-stories.scss */
+.stories-list {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  grid-gap: 24px;
+}
+@media (min-width: 768px) {
+  /* line 36, ../sass/archive-stories.scss */
+  .stories-list {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4, auto);
+  }
+}
+@media (min-width: 992px) {
+  /* line 36, ../sass/archive-stories.scss */
+  .stories-list {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(2, auto);
+  }
+}
+/* line 51, ../sass/archive-stories.scss */
+.stories-list .inner-container {
+  margin: 16px;
+}
+/* line 57, ../sass/archive-stories.scss */
+.stories-list-card-content {
+  display: block;
+  background: #ffffff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.26);
+  overflow: hidden;
+  border-radius: 6px;
+}
+/* line 64, ../sass/archive-stories.scss */
+.stories-list-card-content-img {
+  display: flex;
+}
+/* line 67, ../sass/archive-stories.scss */
+.stories-list-card-content-img img {
+  width: 100%;
+  height: 100%;
+}
+/* line 73, ../sass/archive-stories.scss */
+.stories-list-card-content-name {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #5E5E5E;
+}
+/* line 79, ../sass/archive-stories.scss */
+.stories-list-card-content-date {
+  margin-bottom: 32px;
+  font-size: 16px;
+  color: #A5A5A5;
+}
+/* line 85, ../sass/archive-stories.scss */
+.stories-list-card-content-summary {
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: #5E5E5E;
+  line-height: 24px;
+}
+/* line 94, ../sass/archive-stories.scss */
+.stories-list-card-content-detail {
+  text-align: right;
+}
+/* line 97, ../sass/archive-stories.scss */
+.stories-list-card-content-detail a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #028ED5;
+  letter-spacing: -0.08px;
+  line-height: 26px;
+  font-weight: 400;
+}
+/* line 105, ../sass/archive-stories.scss */
+.stories-list-card-content-detail a .read-more {
+  cursor: pointer;
+}

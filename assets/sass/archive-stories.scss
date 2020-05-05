@@ -1,0 +1,113 @@
+@import "_variables.scss";
+
+body{
+    background: #FFFFFF;
+}
+
+.login{
+    @media(min-width: $screen-mobile){
+        position: relative;
+        z-index: 1;
+    }
+}
+
+/* Stories */ 
+.stories{
+    padding: 64px 0 100px;
+
+    &-title{
+        font-size: 32px;
+        color: #5E5E5E;
+        letter-spacing: 0;
+        text-align: center;
+        padding-bottom: 16px;
+    }
+
+    &-desc{
+        margin: auto;
+        font-size: 16px;
+        color: #5E5E5E;
+        text-align: center;
+        line-height: 26px;
+        max-width: 480px;
+        padding-bottom: 80px;
+    }
+
+    &-list{
+        display: grid;
+        grid-template-rows: repeat(6, auto);
+        grid-gap: 24px;
+
+        @media(min-width: $screen-small){
+            grid-template-columns: auto auto;
+            grid-template-rows: repeat(4, auto);
+        }
+
+        @media(min-width: $screen-medium){
+            grid-template-columns: auto auto auto;
+            grid-template-rows: repeat(2, auto);
+        }
+
+        .inner-container{
+            margin: 16px;
+        }
+
+        &-card{
+
+            &-content{
+                display: block;
+                background: #ffffff;
+                box-shadow: 0 0 4px 0 rgba(0,0,0,0.26);
+                overflow: hidden;
+                border-radius: 6px;
+
+                &-img{
+                    display: flex;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                &-name{
+                    margin-bottom: 8px;
+                    font-size: 16px;
+                    color: #5E5E5E;
+                }
+
+                &-date{
+                    margin-bottom: 32px;
+                    font-size: 16px;
+                    color: #A5A5A5;
+                }
+
+                &-summary{
+                    margin-bottom: 24px;
+                    font-size: 14px;
+                    color: #5E5E5E;
+                    line-height: 24px;
+
+                    
+                }
+
+                &-detail{
+                    text-align: right;
+
+                    a{
+                        text-decoration: none;
+                        font-size: 14px;
+                        color: #028ED5;
+                        letter-spacing: -0.08px;
+                        line-height: 26px;
+                        font-weight: 400;
+
+                        .read-more{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
