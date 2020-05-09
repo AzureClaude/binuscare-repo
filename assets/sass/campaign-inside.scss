@@ -157,14 +157,15 @@
                     }
 
                     &-name{
+                        color: #5E5E5E;
+                        align-self: center;
+
                         .open-sans-semibold{
                             font-size: 16px;
-                            color: #5E5E5E;
                         }
 
                         .open-sans-regular{
                             font-size: 12px;
-                            color: #5E5E5E;
                         }
                     }
                 }

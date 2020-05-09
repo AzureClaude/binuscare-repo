@@ -165,27 +165,30 @@
   width: 120px;
   height: 120px;
 }
-/* line 160, ../sass/campaign-inside.scss */
+/* line 159, ../sass/campaign-inside.scss */
+.campaign-infos-card-content-profile-name {
+  color: #5E5E5E;
+  align-self: center;
+}
+/* line 163, ../sass/campaign-inside.scss */
 .campaign-infos-card-content-profile-name .open-sans-semibold {
   font-size: 16px;
-  color: #5E5E5E;
 }
-/* line 165, ../sass/campaign-inside.scss */
+/* line 167, ../sass/campaign-inside.scss */
 .campaign-infos-card-content-profile-name .open-sans-regular {
   font-size: 12px;
-  color: #5E5E5E;
 }
-/* line 172, ../sass/campaign-inside.scss */
+/* line 173, ../sass/campaign-inside.scss */
 .campaign-infos-card-content-summary {
   margin-top: 24px;
 }
-/* line 175, ../sass/campaign-inside.scss */
+/* line 176, ../sass/campaign-inside.scss */
 .campaign-infos-card-content-summary .open-sans-regular {
   font-size: 16px;
   color: #5E5E5E;
   line-height: 26px;
 }
-/* line 181, ../sass/campaign-inside.scss */
+/* line 182, ../sass/campaign-inside.scss */
 .campaign-infos-card-content-summary a {
   text-decoration: none;
   color: #1B9AD7;
@@ -193,11 +196,11 @@
   line-height: 26px;
   font-weight: 400;
 }
-/* line 188, ../sass/campaign-inside.scss */
+/* line 189, ../sass/campaign-inside.scss */
 .campaign-infos-card-content-summary a .read-more {
   cursor: pointer;
 }
-/* line 197, ../sass/campaign-inside.scss */
+/* line 198, ../sass/campaign-inside.scss */
 .campaign-story {
   display: block;
   background: #ffffff;
@@ -207,12 +210,12 @@
   padding: 24px;
   margin: auto;
 }
-/* line 206, ../sass/campaign-inside.scss */
+/* line 207, ../sass/campaign-inside.scss */
 .campaign-story .open-sans-bold {
   font-size: 21px;
   color: #666666;
 }
-/* line 211, ../sass/campaign-inside.scss */
+/* line 212, ../sass/campaign-inside.scss */
 .campaign-story p {
   margin-top: 40px;
   font-size: 16px;
@@ -221,12 +224,12 @@
 }
 
 /* News */
-/* line 221, ../sass/campaign-inside.scss */
+/* line 222, ../sass/campaign-inside.scss */
 .news {
   background-color: #F8F8F8;
   padding: 80px 0;
 }
-/* line 225, ../sass/campaign-inside.scss */
+/* line 226, ../sass/campaign-inside.scss */
 .news-title {
   font-size: 32px;
   color: #666666;
@@ -234,7 +237,7 @@
   text-align: center;
   padding-bottom: 16px;
 }
-/* line 233, ../sass/campaign-inside.scss */
+/* line 234, ../sass/campaign-inside.scss */
 .news-desc {
   margin: auto;
   font-size: 16px;
@@ -243,13 +246,13 @@
   line-height: 26px;
   max-width: 480px;
 }
-/* line 242, ../sass/campaign-inside.scss */
+/* line 243, ../sass/campaign-inside.scss */
 .news-items {
   margin-top: 64px;
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 242, ../sass/campaign-inside.scss */
+  /* line 243, ../sass/campaign-inside.scss */
   .news-items {
     display: flex;
     flex-wrap: wrap;
@@ -257,23 +260,23 @@
   }
 }
 @media (min-width: 992px) {
-  /* line 242, ../sass/campaign-inside.scss */
+  /* line 243, ../sass/campaign-inside.scss */
   .news-items {
     flex-wrap: nowrap;
   }
 }
-/* line 256, ../sass/campaign-inside.scss */
+/* line 257, ../sass/campaign-inside.scss */
 .news-items-card {
   margin: auto;
   padding: 0 12px 24px;
 }
 @media (min-width: 768px) {
-  /* line 256, ../sass/campaign-inside.scss */
+  /* line 257, ../sass/campaign-inside.scss */
   .news-items-card {
     width: 50%;
   }
 }
-/* line 264, ../sass/campaign-inside.scss */
+/* line 265, ../sass/campaign-inside.scss */
 .news-items-card-content {
   display: block;
   background: #ffffff;
@@ -282,50 +285,50 @@
   border-radius: 6px;
   padding-bottom: 16px;
 }
-/* line 273, ../sass/campaign-inside.scss */
+/* line 274, ../sass/campaign-inside.scss */
 .news-items-card-content-img img {
   width: 100%;
 }
-/* line 278, ../sass/campaign-inside.scss */
+/* line 279, ../sass/campaign-inside.scss */
 .news-items-card-content-title {
   margin: 16px;
   font-size: 18px;
   color: #5E5E5E;
   line-height: 24px;
 }
-/* line 284, ../sass/campaign-inside.scss */
+/* line 285, ../sass/campaign-inside.scss */
 .news-items-card-content-title span {
   max-width: 48px;
 }
-/* line 289, ../sass/campaign-inside.scss */
+/* line 290, ../sass/campaign-inside.scss */
 .news-items-card-content-date {
   margin-left: 16px;
   font-size: 14px;
   color: #A5A5A5;
 }
-/* line 298, ../sass/campaign-inside.scss */
+/* line 299, ../sass/campaign-inside.scss */
 .news-detail {
   margin-top: 16px;
   font-size: 14px;
   letter-spacing: 0;
   text-align: center;
 }
-/* line 304, ../sass/campaign-inside.scss */
+/* line 305, ../sass/campaign-inside.scss */
 .news-detail a {
   text-decoration: none;
   color: #1B9AD7;
 }
-/* line 309, ../sass/campaign-inside.scss */
+/* line 310, ../sass/campaign-inside.scss */
 .news-detail span {
   cursor: pointer;
 }
 
 /* Galeri */
-/* line 316, ../sass/campaign-inside.scss */
+/* line 317, ../sass/campaign-inside.scss */
 .gallery {
   padding: 80px 0;
 }
-/* line 319, ../sass/campaign-inside.scss */
+/* line 320, ../sass/campaign-inside.scss */
 .gallery-title {
   font-size: 32px;
   color: #666666;
@@ -333,7 +336,7 @@
   text-align: center;
   padding-bottom: 16px;
 }
-/* line 327, ../sass/campaign-inside.scss */
+/* line 328, ../sass/campaign-inside.scss */
 .gallery-desc {
   margin: auto;
   font-size: 16px;
@@ -342,7 +345,7 @@
   line-height: 26px;
   max-width: 480px;
 }
-/* line 336, ../sass/campaign-inside.scss */
+/* line 337, ../sass/campaign-inside.scss */
 .gallery-content {
   margin-top: 64px;
   display: grid;
@@ -351,30 +354,30 @@
   grid-gap: 24px;
 }
 @media (min-width: 768px) {
-  /* line 336, ../sass/campaign-inside.scss */
+  /* line 337, ../sass/campaign-inside.scss */
   .gallery-content {
     grid-template-columns: auto auto;
     grid-template-rows: repeat(4, auto);
   }
-  /* line 347, ../sass/campaign-inside.scss */
+  /* line 348, ../sass/campaign-inside.scss */
   .gallery-content-photo-big {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 }
 @media (min-width: 992px) {
-  /* line 336, ../sass/campaign-inside.scss */
+  /* line 337, ../sass/campaign-inside.scss */
   .gallery-content {
     grid-template-columns: auto auto auto;
     grid-template-rows: repeat(3, auto);
   }
-  /* line 357, ../sass/campaign-inside.scss */
+  /* line 358, ../sass/campaign-inside.scss */
   .gallery-content-photo-big {
     grid-row-start: 1;
     grid-row-end: 3;
   }
 }
-/* line 363, ../sass/campaign-inside.scss */
+/* line 364, ../sass/campaign-inside.scss */
 .gallery-content img {
   display: flex;
   width: 100%;
@@ -382,12 +385,12 @@
 }
 
 /* Donator */
-/* line 372, ../sass/campaign-inside.scss */
+/* line 373, ../sass/campaign-inside.scss */
 .donator {
   background-color: #F8F8F8;
   padding: 80px 0;
 }
-/* line 376, ../sass/campaign-inside.scss */
+/* line 377, ../sass/campaign-inside.scss */
 .donator-title {
   font-size: 32px;
   color: #666666;
@@ -395,7 +398,7 @@
   text-align: center;
   padding-bottom: 16px;
 }
-/* line 384, ../sass/campaign-inside.scss */
+/* line 385, ../sass/campaign-inside.scss */
 .donator-desc {
   margin: auto;
   font-size: 16px;
@@ -404,7 +407,7 @@
   line-height: 26px;
   max-width: 480px;
 }
-/* line 393, ../sass/campaign-inside.scss */
+/* line 394, ../sass/campaign-inside.scss */
 .donator-list {
   margin-top: 43px;
   display: grid;
@@ -412,19 +415,19 @@
   row-gap: 24px;
 }
 @media (min-width: 579px) {
-  /* line 393, ../sass/campaign-inside.scss */
+  /* line 394, ../sass/campaign-inside.scss */
   .donator-list {
     grid-template-columns: repeat(2, auto);
     column-gap: 24px;
   }
 }
 @media (min-width: 992px) {
-  /* line 393, ../sass/campaign-inside.scss */
+  /* line 394, ../sass/campaign-inside.scss */
   .donator-list {
     grid-template-columns: repeat(3, auto);
   }
 }
-/* line 411, ../sass/campaign-inside.scss */
+/* line 412, ../sass/campaign-inside.scss */
 .donator-list-card-content {
   display: grid;
   grid-template-columns: 80px auto;
@@ -435,7 +438,7 @@
   border-radius: 6px;
   padding: 24px;
 }
-/* line 421, ../sass/campaign-inside.scss */
+/* line 422, ../sass/campaign-inside.scss */
 .donator-list-card-content-photo {
   background-image: url("../images/example-photos/example3.jpg");
   background-size: cover;
@@ -443,23 +446,23 @@
   width: 80px;
   height: 80px;
 }
-/* line 429, ../sass/campaign-inside.scss */
+/* line 430, ../sass/campaign-inside.scss */
 .donator-list-card-content-profile {
   display: grid;
   grid-template-rows: repeat(3, auto);
   row-gap: 4px;
 }
-/* line 434, ../sass/campaign-inside.scss */
+/* line 435, ../sass/campaign-inside.scss */
 .donator-list-card-content-profile-name {
   font-size: 21px;
   color: #5E5E5E;
 }
-/* line 440, ../sass/campaign-inside.scss */
+/* line 441, ../sass/campaign-inside.scss */
 .donator-list-card-content-profile-amount span {
   font-size: 16px;
   color: #5E5E5E;
 }
-/* line 446, ../sass/campaign-inside.scss */
+/* line 447, ../sass/campaign-inside.scss */
 .donator-list-card-content-profile-time {
   font-size: 12px;
   color: #CDCDCD;
